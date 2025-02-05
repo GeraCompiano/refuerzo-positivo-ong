@@ -1,15 +1,6 @@
 /* Tipografía accesible */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-<<<<<<< HEAD
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-
-body {
-  font-family: Arial, sans-serif;
-=======
 /* General */
 body {
   font-family: Arial, sans-serif;
@@ -30,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
->>>>>>> f80adaf (Configuración limpia)
 }
 
 header {
@@ -60,10 +50,8 @@ footer p {
   color: #f8f9fa; /* Aseguramos que los párrafos sean blancos */
 }
 
-<<<<<<< HEAD
-=======
+
 /****************** nav *******************/
->>>>>>> f80adaf (Configuración limpia)
 /* Estilos para el nav */
 .navbar-brand {
   display: flex;
@@ -85,8 +73,7 @@ footer p {
   white-space: normal;
 }
 
-<<<<<<< HEAD
-=======
+
 /* Ajustes adicionales */
 .navbar-nav .nav-item .nav-link {
   padding: 10px 15px; /* Espaciado más cómodo */
@@ -104,29 +91,13 @@ footer p {
 
 /************** @media max-width 767 *******************/
 
->>>>>>> f80adaf (Configuración limpia)
 /* Evitar que el menú hamburguesa baje */
 @media (max-width: 767px) {
   .navbar-brand {
     flex-grow: 1;
   }
 
-<<<<<<< HEAD
- /* .navbar-toggler {
-    position: absolute;
-    right: 0.9375rem;
-    top: 50%;
-    transform: translateY(-50%);
-  }*/
 
-  .navbar-toggler.collapsed {
-    display: none;
-  }
-}
-
-/* Apilamiento antes de invadir el menú hamburguesa */
-@media (max-width: 580px) {
-=======
   .custom-carousel {
     max-width: 100%;
   }
@@ -149,7 +120,6 @@ footer p {
     height: 80vh; /* Ajustamos la altura en pantallas muy pequeñas */
   }
 
->>>>>>> f80adaf (Configuración limpia)
   .nav-text {
     display: block;
     text-align: left;
@@ -157,11 +127,8 @@ footer p {
   }
 }
 
-<<<<<<< HEAD
-=======
 /************** @media max-width 535 *******************/
 
->>>>>>> f80adaf (Configuración limpia)
 /* Reducción progresiva del texto y ajustes en logo */
 @media (max-width: 535px) {
   .nav-text {
@@ -180,11 +147,8 @@ footer p {
   }
 }
 
-<<<<<<< HEAD
-=======
 /************** @media max-width 250 *******************/
 
->>>>>>> f80adaf (Configuración limpia)
 /* En pantallas de 250px o menos */
 @media (max-width: 250px) {
   .nav-text {
@@ -205,11 +169,8 @@ footer p {
   }
 }
 
-<<<<<<< HEAD
-=======
 /****************** carrusel *******************/
 
->>>>>>> f80adaf (Configuración limpia)
 /* Estilos del carrusel */
 .custom-carousel {
   max-width: 45rem;
@@ -226,77 +187,13 @@ footer p {
   display: block;
 }
 
-<<<<<<< HEAD
-/* Responsividad del carrusel */
-@media (max-width: 767px) {
-  .custom-carousel {
-    max-width: 100%;
-  }
-}
-
-=======
 /****************** card *******************/
->>>>>>> f80adaf (Configuración limpia)
 .card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
 
-<<<<<<< HEAD
-/* Ajustes adicionales */
-.navbar-nav .nav-item .nav-link {
-  padding: 10px 15px; /* Espaciado más cómodo */
-  font-weight: bold;  /* Negrita para mejor visibilidad */
-}
 
-.navbar-nav .nav-item .nav-link:hover {
-  background-color: #007BFF; /* Color de fondo al pasar el mouse */
-  color: #fff; /* Color de texto */
-}
-
-.navbar-nav .nav-item .nav-link.active {
-  border-bottom: 2px solid #fff; /* Línea debajo del enlace activo */
-}
-
-
-
-/* Estilo para el formulario */
-#contacto {
-  background-color: #f8f9fa;
-}
-
-#contacto h2 {
-  font-family: 'Arial', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-#contact-form .form-control {
-  border-radius: 0.5rem;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 1px solid #ced4da;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-#contact-form .form-control:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
-}
-
-#contact-form .btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
-  font-size: 1.1rem;
-  padding: 0.75rem 2rem;
-  border-radius: 0.5rem;
-}
-
-#contact-form .btn-primary:hover {
-  background-color: #0056b3;
-  border-color: #0056b3;
-}
-=======
 /***************** Formulario **********************/
 
 /* Mejorando el formulario */
@@ -433,5 +330,3 @@ iframe .appsMaterialWizButtonEl {
 iframe .appsMaterialWizButtonEl:hover {
   background-color: #f1c40f;
 }*/
-
->>>>>>> f80adaf (Configuración limpia)

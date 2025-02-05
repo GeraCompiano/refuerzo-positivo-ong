@@ -47,32 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-<<<<<<< HEAD
-
-//***************   Formularioo   ******************** */
-
-document.addEventListener("DOMContentLoaded", function() {
-    const form = document.getElementById('contact-form');
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();  // Evitar el envío por defecto
-
-        // Verificar si los campos están vacíos
-        const nombre = document.getElementById('nombre').value;
-        const email = document.getElementById('email').value;
-        const asunto = document.getElementById('asunto').value;
-        const mensaje = document.getElementById('mensaje').value;
-
-        if (!nombre || !email || !asunto || !mensaje) {
-            alert("Por favor, completa todos los campos.");
-            return;
-        }
-
-        // Aquí podrías hacer el envío a través de AJAX o redirigir a un servidor
-        form.submit();  // Enviar formulario (esto es solo un ejemplo)
-    });
-});
-=======
 /********* ENVIO DE FORMULARIO A FPRMSPREE CONVIRTIENDO A JSON ******/
 
 document.getElementById("contact-form").addEventListener("submit", async function (event) {
@@ -102,6 +76,3 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         alert("Hubo un problema al enviar el formulario.");
     }
 });
-
-  
->>>>>>> f80adaf (Configuración limpia)
