@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+<<<<<<< HEAD
 
 //***************   Formularioo   ******************** */
 
@@ -71,3 +72,36 @@ document.addEventListener("DOMContentLoaded", function() {
         form.submit();  // Enviar formulario (esto es solo un ejemplo)
     });
 });
+=======
+/********* ENVIO DE FORMULARIO A FPRMSPREE CONVIRTIENDO A JSON ******/
+
+document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Evita el envío automático
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const jsonData = Object.fromEntries(formData.entries()); // Convierte FormData en JSON
+
+    try {
+        console.log("Datos a enviar:", JSON.stringify(jsonData));
+
+        const response = await fetch("https://formspree.io/f/xeoekbve", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" }, // Indicar que se envía JSON
+            body: JSON.stringify(jsonData), // Convertir los datos en JSON
+        });
+
+        if (response.ok) {
+            alert("Formulario enviado con éxito.");
+            form.reset(); // Limpiar formulario
+        } else {
+            alert("Error al enviar el formulario.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Hubo un problema al enviar el formulario.");
+    }
+});
+
+  
+>>>>>>> f80adaf (Configuración limpia)
