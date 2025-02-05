@@ -1,0 +1,329 @@
+/* Tipografía accesible */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color: #343a40; /* Fondo gris oscuro */
+  color: #f8f9fa; /* Letras en blanco */
+  padding: 1rem 0; /* Reduje la altura del padding */
+  text-align: center;
+}
+
+/* Estilos para enlaces en el footer */
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #ffdd57; /* Un amarillo más claro */
+}
+
+
+footer p {
+  margin: 0;
+  color: #f8f9fa; /* Aseguramos que los párrafos sean blancos */
+}
+
+/****************** nav *******************/
+/* Estilos para el nav */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Ajustar el logo más a la izquierda */
+.navbar-brand img {
+  margin-right: 0.625rem;
+  max-width: 6.25rem;
+  height: auto;
+}
+
+/* Texto responsivo */
+.nav-text {
+  display: inline-block;
+  font-size: 1.5rem;
+  white-space: normal;
+}
+
+/* Ajustes adicionales */
+.navbar-nav .nav-item .nav-link {
+  padding: 10px 15px; /* Espaciado más cómodo */
+  font-weight: bold;  /* Negrita para mejor visibilidad */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #007BFF; /* Color de fondo al pasar el mouse */
+  color: #fff; /* Color de texto */
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  border-bottom: 2px solid #fff; /* Línea debajo del enlace activo */
+}
+
+/************** @media max-width 767 *******************/
+
+/* Evitar que el menú hamburguesa baje */
+@media (max-width: 767px) {
+  .navbar-brand {
+    flex-grow: 1;
+  }
+
+  .custom-carousel {
+    max-width: 100%;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+
+  /* Mejorar márgenes y espaciado en dispositivos pequeños */
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/************** @media max-width 500 *******************/
+
+/* Apilamiento antes de invadir el menú hamburguesa */
+@media (max-width: 580px) {
+  iframe {
+    height: 80vh; /* Ajustamos la altura en pantallas muy pequeñas */
+  }
+
+  .nav-text {
+    display: block;
+    text-align: left;
+    word-break: break-word;
+  }
+}
+
+/************** @media max-width 535 *******************/
+
+/* Reducción progresiva del texto y ajustes en logo */
+@media (max-width: 535px) {
+  .nav-text {
+    font-size: 0.875rem;
+  }
+
+  .navbar-brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    margin-bottom: 0.3125rem;
+    max-width: 5rem;
+  }
+}
+
+/************** @media max-width 250 *******************/
+
+/* En pantallas de 250px o menos */
+@media (max-width: 250px) {
+  .nav-text {
+    display: none;
+  }
+
+  .navbar-brand img {
+    max-width: 4.375rem;
+  }
+
+  .navbar-toggler {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.625rem;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+/****************** carrusel *******************/
+
+/* Estilos del carrusel */
+.custom-carousel {
+  max-width: 45rem;
+  aspect-ratio: 2 / 1;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.custom-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/****************** card *******************/
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/***************** Formulario **********************/
+
+/* Mejorando el formulario */
+form {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form textarea {
+  border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto de hover en campos de texto */
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de envío */
+form button {
+  background-color: #007bff;
+  border: none;
+  font-size: 1.1rem;
+  padding: 12px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/****************** Iframe *******************/
+
+/* Estilo para el iframe del Google Form 
+iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 100vh;
+  border: none;
+  border-radius: 10px;
+  margin: 30px auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Fondo blanco para el iframe 
+}
+iframe form {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+}
+
+iframe .freebirdFormviewerViewHeaderTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+iframe .freebirdFormviewerViewItemsItemTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 10px;
+}
+
+/* Estilo para las cajas de respuesta 
+iframe .freebirdFormviewerViewItemsItem {
+  margin-bottom: 20px;
+}
+
+iframe .quantumWizTextinputPaperinputInput {
+  border: 2px solid #f8d746;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+iframe .quantumWizTextinputPaperinputInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo para las áreas de texto 
+iframe .freebirdFormviewerViewItemsItemTextArea {
+  border: 2px solid #f8d746;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+iframe .freebirdFormviewerViewItemsItemTextArea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilo de las casillas de verificación y opciones 
+iframe .freebirdFormviewerViewItemsCheckboxChoice {
+  font-size: 1rem;
+  color: #1e1e1e;
+}
+
+iframe .freebirdFormviewerViewItemsRadioChoice {
+  font-size: 1rem;
+  color: #1e1e1e;
+}
+
+/* Diferenciar las preguntas obligatorias con un pequeño icono 
+iframe .freebirdFormviewerViewItemsItemRequired {
+  font-size: 1.1rem;
+  color: #ff3b30; /* Color rojo para preguntas obligatorias 
+}
+
+/* Estilo para botones de envío 
+iframe .appsMaterialWizButtonEl {
+  background-color: #f8d746;
+  color: #343a40;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+iframe .appsMaterialWizButtonEl:hover {
+  background-color: #f1c40f;
+}*/
+
