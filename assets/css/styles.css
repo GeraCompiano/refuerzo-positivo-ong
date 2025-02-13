@@ -1,7 +1,12 @@
 /* Tipografía accesible */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-/* General */
+/* codigo del negro bg dark: #212529*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -192,7 +197,11 @@ footer p {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
-
+.card-img-top {
+  width: 100%;  /* Hace que la imagen ocupe todo el ancho de la tarjeta */
+  height: 100px; /* Ajusta la altura según tu necesidad */
+  object-fit: contain; /* Recorta la imagen para que encaje sin distorsión */
+}
 
 /***************** Formulario **********************/
 
